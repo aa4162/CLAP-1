@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int s1,s2,s3,s4,s5;
+    scanf("%d%d%d%d%d", &s1,&s2,&s3,&s4,&s5);
+    float per;
+    per = (s1+s2+s3+s4+s5)*100.0/500;
+    if(per>=90)
+        printf("%.2f Percent\n A",per);
+    else if(per>=80)
+        printf("%.2f Percent\n B",per);
+    else if(per>=70) 
+        printf("%.2f Percent\n C",per);
+    else if(per>=60) 
+        printf("%.2f Percent\n D",per);
+    else if(per>=40) 
+        printf("%.2f Percent\n E",per);
+    else
+        printf("%.2f Percent\n F",per);
+
+    return 0;
+}
